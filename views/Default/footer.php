@@ -1,4 +1,4 @@
-<footer>
+<footer class="container-fluid bg-dark text-light text-center">
 	this is the footer &copy;
 </footer>
 

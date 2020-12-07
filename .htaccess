@@ -1,8 +1,8 @@
-ErrorDocument 400 http://localhost:81/ventas/404.php
-ErrorDocument 403 http://localhost:81/ventas/404.php
-ErrorDocument 403 http://localhost:81/ventas/404.php
-ErrorDocument 404 http://localhost:81/ventas/404.php
-ErrorDocument 500 http://localhost:81/ventas/404.php
+ErrorDocument 400 http://localhost:81/ventas/views/errors/404.php
+ErrorDocument 403 http://localhost:81/ventas/views/errors/404.php
+ErrorDocument 403 http://localhost:81/ventas/views/errors/404.php
+ErrorDocument 404 http://localhost:81/ventas/views/errors/404.php
+ErrorDocument 500 http://localhost:81/ventas/views/errors/404.php
 Options -Indexes
 IndexIgnore *.php *.html
 RewriteEngine On 

@@ -1,3 +1,17 @@
-h1{
-	color: blue;
+
+.navbar-brand{
+	max-width: 50%;
+}
+.imglogo{
+	max-width: 100%;
+}
+nav{
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+}
+@media(min-width: 768px){
+	.navbar-brand{
+		max-width: 15%;
+	}
 }
