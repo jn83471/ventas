@@ -44,13 +44,20 @@
 					$papas->{$Method}();
 				}
 			}
+			else{
+				$Controllerpath="controller/errorController.php";
+				require_once $Controllerpath;
+				$papas=new ErrorController();
+				$papas->Error($url);
+			}
 		}
 		
 	}
 	else{
-		$Controllerpath="controller/indexController.php";
+		$Controllerpath="controller/errorController.php";
 		require_once $Controllerpath;
-		$papas=new IndexController();
+		$papas=new ErrorController();
+		$papas->Error($url);
 	}
 
 	

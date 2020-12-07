@@ -2,12 +2,12 @@
 	/**
 	 * 
 	 */
-	class indexModel extends Conexion
+	class Conexion
 	{
 		
 		public function __construct()
 		{
-			parent::__construct();
+			$this->db=new QueryManager("root","","ventas");
 		}
 	}
 ?>

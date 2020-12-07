@@ -12,7 +12,7 @@
 
 		}
 		public function Index(){
-			$this->views->render($this,"index");
+			$this->views->render($this,"index",null);
 		}
 	}
 ?>

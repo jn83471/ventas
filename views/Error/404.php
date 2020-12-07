@@ -13,6 +13,11 @@
                     404 Not Found</h2>
                 <div class="error-details">
                     Sorry, an error has occured, Requested page not found!
+                    <h3>
+                        <?php
+                        echo $model;
+                        ?>
+                    </h3>
                 </div>
                 <div class="error-actions">
                     <a href="Index/index" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
