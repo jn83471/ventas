@@ -15,7 +15,21 @@
 				]);
 			}
 			catch(Throwable $th){
-				print "error ".$th->getMessage();
+				print $th->getMessage();
+			}
+		}
+		public function selectone($attr,$table,$where,$param){
+			try{
+				$where = $where ?? "";
+	            $query = "SELECT ".$attr." FROM ".$table.$where;
+	            $sth = $this->pdo->prepare($query);
+	            $sth->execute($param);
+	            $response = $sth->fetchAll(PDO::FETCH_ASSOC);
+
+				return array("results"=>$response);
+			}
+			catch(Throwable $th){
+				return $th->getMessage();
 			}
 		}
 	}

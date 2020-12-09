@@ -8,6 +8,7 @@
 		public function __construct()
 		{
 			$this->views=new views();
+			$this->role=new Roles();
 			$this->loadclassmodels();
 		}
 		public function loadclassmodels(){

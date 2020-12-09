@@ -12,6 +12,7 @@
 
 		}
 		public function Index(){
+			$this->role->setroles();
 			$this->views->render($this,"index",null);
 		}
 	}
