@@ -5,6 +5,6 @@
 4. [Collaboration](#collaboration)
 5. [FAQs](#faqs)
 
-##cambios realizados
+## cambios realizados
 
 cambios realizados en github
