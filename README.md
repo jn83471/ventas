@@ -8,3 +8,9 @@
 ## cambios realizados
 
 cambios realizados en github
+1. readme
+2. index
+3. controller
+
+![php](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png)
+[ir a la imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png)
