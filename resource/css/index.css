@@ -5,6 +5,15 @@
 .imglogo{
 	max-width: 100%;
 }
+.imageUser{
+	max-width: 100%;
+}
+input[type="file"]{
+	opacity: 0%;
+	width: 0.1px;
+	height: 0.1px;
+	position: absolute;
+}
 nav{
 	border-bottom-color: black;
 	border-bottom-style: solid;

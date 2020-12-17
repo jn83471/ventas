@@ -13,7 +13,7 @@
 		}
 		public function Index(){
 			$this->role->setroles();
-			$this->views->render($this,"index",null);
+			$this->views->render($this,"index",null,null);
 		}
 	}
 ?>

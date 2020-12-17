@@ -8,7 +8,7 @@
 			parent::__construct();
 		}
 		public function Error($url){
-			$this->views->render($this,"404",$url);
+			$this->views->render($this,"404",$url,null);
 		}
 
 	}

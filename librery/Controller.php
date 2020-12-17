@@ -10,6 +10,7 @@
 			$this->views=new views();
 			$this->role=new Roles();
 			$this->loadclassmodels();
+			$this->anonim=new AnonymousClasses();
 		}
 		public function loadclassmodels(){
 			//optine el nombre de la clase

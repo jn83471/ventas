@@ -29,12 +29,12 @@
 	       require LBS.$class.".php";
 	    }
 	});
-
-	$Controllerpath="controller/".$Controller."Controller.php";
+	$controller=$Controller."Controller";
+	$Controllerpath="controller/".$controller.".php";
 	if(file_exists($Controllerpath)){
 		require_once $Controllerpath;
 
-		$papas=new IndexController();
+		$papas=new $controller();
 		if(isset($Method)){
 			if(method_exists($papas, $Method)){
 				if(isset($params)){
@@ -54,6 +54,7 @@
 		
 	}
 	else{
+		echo $Controllerpath;
 		$Controllerpath="controller/errorController.php";
 		require_once $Controllerpath;
 		$papas=new ErrorController();

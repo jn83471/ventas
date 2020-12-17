@@ -33,31 +33,31 @@
 									<div class="card-body">
 										<div class="form-group">
 											<input type="text" name="nid" placeholder="NID" class="form-control" value="<?php echo $model1->NID?? '' ?>" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->NID?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="text" name="name" placeholder="Name" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->Name?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="text" name="lastname" placeholder="Last name" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->LastName?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="phone" name="phone" placeholder="Phone" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->Phone?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="phone" name="user" placeholder="Enter the user" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->User?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="email" name="email" placeholder="Email" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->Email?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="password" name="password" placeholder="Password" class="form-control" autofocus>
-											<span class="text-danger"></span>
+											<span class="text-danger"><?php echo $model2->Password?? ''; ?></span>
 										</div>
 										<div class="form-group">
 											<input type="submit" class="btn btn-outline-danger">
