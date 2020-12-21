@@ -1,3 +1,3 @@
-class User extends Updatefile{
+class User extends Uploadpicture{
 
 }

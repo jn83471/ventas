@@ -9,16 +9,20 @@
 		function __construct()
 		{
 			parent::__construct();
-			session_start();
 		}
 		public function Register(){
-			if(isset($_SESSION['model1']) && isset($_SESSION["model2"] ))
+			$model1=session::getsession("model1");
+			$model2=session::getsession("model2");
+			if($model1!=null && $model2!=null )
 			{
-	            $array1 = unserialize($_SESSION['model1']);
-	            $array2 = unserialize($_SESSION['model2']);
+				
+	            $array1 = unserialize($model1);
+	            $array2 = unserialize($model2);
 	            if($array1 != null && $array2!=null){
-	                $model1 = $this->anonim->TUser($array1);
-	                $model2 = $this->anonim->TUser($array2);
+	                $model1 = $this->TUser($array1);
+	                $model2 = $this->TUser($array2);
+	                $_SESSION['model1']="";
+	                $_SESSION['model2']="";
 	                $this->views->render($this,"register",$model1,$model2);
 	                //$this->views->render($this,"register",null,null); 
 	            }else{
@@ -60,7 +64,7 @@
 				$user="ingrese su usuario";
 				$execute=false;
 			}
-			$_SESSION["model1"]=serialize(array(
+			$model1=array(
 				$_POST["nid"],
 				$_POST["name"],
 				$_POST["lastname"],
@@ -68,8 +72,10 @@
 				$_POST["password"],
 				$_POST["phone"],
 				$_POST["user"]	
-			));
-			$_SESSION["model2"]=serialize(array(
+			);
+			session::setsession("model1",serialize($model1));
+			
+			$model2=array(
 				$nid,
 				$name,
 				$lastname,
@@ -77,7 +83,8 @@
 				$password,
 				$phone,
 				$user
-			));
+			);
+			session::setsession("model2",serialize($model2));
 			header('Location: Register');
 		}
 	}

@@ -60,6 +60,13 @@
 											<span class="text-danger"><?php echo $model2->Password?? ''; ?></span>
 										</div>
 										<div class="form-group">
+											<select class="form-control" name="Roles" id="">
+												<option value=""></option>
+											</select>
+											<span class="text-danger"><?php echo $model2->Password?? ''; ?></span>
+										</div>
+
+										<div class="form-group">
 											<input type="submit" class="btn btn-outline-danger">
 											<input type="reset" class="btn btn-outline-warning">
 										</div>

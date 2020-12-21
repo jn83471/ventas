@@ -2,7 +2,7 @@
 	/**
 	 * 
 	 */
-	class controller
+	class controller extends AnonymousClasses
 	{
 		
 		public function __construct()
@@ -10,7 +10,7 @@
 			$this->views=new views();
 			$this->role=new Roles();
 			$this->loadclassmodels();
-			$this->anonim=new AnonymousClasses();
+			session::start();
 		}
 		public function loadclassmodels(){
 			//optine el nombre de la clase
